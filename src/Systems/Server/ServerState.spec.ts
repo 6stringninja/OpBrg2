@@ -11,7 +11,7 @@ describe('ServerStateSerializer', function() {
 
     expect(conf).toBeDefined();
 
-    expect(conf.result.state).toBe('');
+    expect(conf.state).toBe('');
     ServerState.serializer.dir = SerializerDir.Config;
   });
 });

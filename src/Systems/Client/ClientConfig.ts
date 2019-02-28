@@ -12,6 +12,7 @@ export class ClientConfig implements IClientConfig {
     if (!(await ClientConfig.serializer.dataExists())) {
       await ClientConfig.serializer.serialize(new ClientConfig());
     }
-    return await ClientConfig.serializer.deserialize();
+    const res = await ClientConfig.serializer.deserialize();
+    return res.result ? res.result : new ClientConfig();
   }
 }

@@ -10,6 +10,7 @@ export class ServerState implements IServerState {
     if (!(await ServerState.serializer.dataExists())) {
       await ServerState.serializer.serialize(new ServerState());
     }
-    return await ServerState.serializer.deserialize();
+    const res = await ServerState.serializer.deserialize();
+    return res.result ? res.result : new ServerState();
   }
 }

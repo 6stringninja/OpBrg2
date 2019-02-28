@@ -9,6 +9,7 @@ export class ClientState implements IClientState {
     if (!(await ClientState.serializer.dataExists())) {
       await ClientState.serializer.serialize(new ClientState());
     }
-    return await ClientState.serializer.deserialize();
+    const res = await ClientState.serializer.deserialize();
+    return res.result ? res.result : new ClientState();
   }
 }

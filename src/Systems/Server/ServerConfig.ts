@@ -12,6 +12,7 @@ export class ServerConfig implements IServerConfig {
     if (!(await ServerConfig.serverConfigSerilizer.dataExists())) {
       await ServerConfig.serverConfigSerilizer.serialize(new ServerConfig());
     }
-    return await ServerConfig.serverConfigSerilizer.deserialize();
+    const result = await (ServerConfig.serverConfigSerilizer.deserialize());
+    return result.result ? result.result : new ServerConfig();
   }
 }

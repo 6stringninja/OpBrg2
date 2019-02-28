@@ -32,7 +32,7 @@ describe('ServerConfigSerializer', function() {
 
     expect(conf).toBeDefined();
 
-    expect(conf.result.clientLoggingMessageWireTap.length).toBe(0);
+    expect(conf.clientLoggingMessageWireTap.length).toBe(0);
     ServerConfig.serverConfigSerilizer.dir = SerializerDir.Config;
   });
 });

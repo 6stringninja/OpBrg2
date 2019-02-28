@@ -14,7 +14,7 @@ describe('ClientConfigSerializer', function() {
 
     expect(conf).toBeDefined();
 
-    expect(conf.result.name).toBe('');
+    expect(conf.name).toBe('');
     ClientConfig.serializer.dir = SerializerDir.Config;
   });
 });

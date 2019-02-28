@@ -14,7 +14,7 @@ describe('ClientStateSerializer', function() {
 
     expect(conf).toBeDefined();
 
-    expect(conf.result.name).toBe('');
+    expect(conf.name).toBe('');
     ClientState.serializer.dir = SerializerDir.Config;
   });
 });
