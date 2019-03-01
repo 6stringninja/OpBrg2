@@ -1,5 +1,5 @@
 import { IServerConfig } from './IServerConfig';
-import { SerializerJsonFileService } from '../Application/FileUtil';
+import { SerializerJsonFileService } from '../Common/FileUtil';
 import { ServerConfigSerializer } from './ServerConfigSerializer';
 export class ServerConfig implements IServerConfig {
   serverPassword = '1234';

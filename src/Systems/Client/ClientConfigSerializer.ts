@@ -1,7 +1,7 @@
 import {
   SerializerJsonFileService,
   SerializerDir
-} from '../Application/FileUtil';
+} from '../Common/FileUtil';
 import { ClientConfig } from './ClientConfig';
 export class ClientConfigSerializer extends SerializerJsonFileService<
   ClientConfig

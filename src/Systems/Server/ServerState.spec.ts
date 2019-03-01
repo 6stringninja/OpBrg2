@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { ServerState } from './ServerState';
-import { SerializerDir } from '../Application/FileUtil';
+import { SerializerDir } from '../Common/FileUtil';
 describe('ServerStateSerializer', function() {
   it('should return config', async function() {
     ServerState.serializer.dir = SerializerDir.ConfigTest;

@@ -1,7 +1,7 @@
 import {
   SerializerJsonFileService,
   SerializerDir
-} from '../Application/FileUtil';
+} from '../Common/FileUtil';
 import { ServerState } from './ServerState';
 export class ServerStateSerializer extends SerializerJsonFileService<
   ServerState

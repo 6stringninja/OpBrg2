@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { ClientStateSerializer } from './ClientStateSerializer';
 import { ClientState } from './ClientState';
-import { SerializerDir } from '../Application/FileUtil';
+import { SerializerDir } from '../Common/FileUtil';
 describe('ClientStateSerializer', function() {
   const test = new ClientStateSerializer();
 

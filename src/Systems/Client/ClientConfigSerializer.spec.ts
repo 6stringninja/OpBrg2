@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { ClientConfigSerializer } from './ClientConfigSerializer';
 import { ClientConfig } from './ClientConfig';
-import { SerializerDir } from '../Application/FileUtil';
+import { SerializerDir } from '../Common/FileUtil';
 describe('ClientConfigSerializer', function() {
   const test = new ClientConfigSerializer();
 

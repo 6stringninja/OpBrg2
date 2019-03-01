@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { ServerConfigSerializer } from './ServerConfigSerializer';
 import { ServerConfig } from './ServerConfig';
-import { SerializerDir } from '../Application/FileUtil';
+import { SerializerDir } from '../Common/FileUtil';
 describe('ServerConfigSerializer', function() {
   const test = new ServerConfigSerializer();
   beforeEach(function() {
